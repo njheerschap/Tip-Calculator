@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-bottom: 10px;
+}
+
+/* Component Styles */
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #c5e4e7;
+    font-family: 'Space Mono', monospace;
+}
+
+.logo-wrapper {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 41px;
+}
+
+.calc-body {
+    background-color: #FFF;
+    margin-bottom: 32px;
+    border-radius: 25px 25px 0 0 ;
+}
+
+.total,
+.tip,
+.party-size {
+    padding: 32px;
+}
+
+
+/* Bill Total Styles */
+
+.total p {
+    margin-top: 0;
+    margin-bottom: 6px;
+    color: #5e7a7d;
+    font-weight: 700;
+}
+
+.currency-input {
+    position: relative;
+    width: 100%;
+    height: 48px;
+}
+
+.currency-input img {
+    position: absolute;
+    margin-top: 16.87px;
+    margin-left: 19.26px;
+}
+
+.currency-input input {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 17.5px;
+    border: none;
+    background-color: #f3f9fa;
+    font-size: 24px;
+    text-align: right;
+}
+
+/* Tip Selection Styles */
+
+.tip {
+    width: 100%;
+    height: 211px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.tip p {
+    margin: 0 0 16px 0;
+    color: #5e7a7d;
+    font-weight: 700;
+}
+
+.percentages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 16px;
+}
+
+.percent {
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFF;
+    background-color: #00474b;
+    border-radius: 5px;
+}
+
+.custom-percent {
+    text-align: right;
+    padding-right: 17.33px;
+    color: #547878;
+    background-color: #f3f9fa;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    max-width: 148px;
+    border: none;
+}
+
+.custom-percent::placeholder {
+    color: #547878;
+    opacity: 1;
+}
+
+.percentage-sign {
+    display: inline;
+}
+
+
+.selected {
+    background-color: #9fe8df;
+    color: #00474b;
+}
+
+.custom-error {
+    display: none;
+    font-size: 10px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+/* Number of People Styles */
+
+.party-size p {
+    margin: 0 0 6px 0;
+    color: #5e7a7d;
+    font-weight: 700;
+}
+
+.people {
+    height: 48px;
+}
+
+.people input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 16.72px;
+    font-size: 24px;
+    background-color: #f3f9fa;
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.people img {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: 17px;
+    z-index: 1;
+}
+
+/* Results Styles */
+
+.results {
+    height: 257px;
+    margin: 0 32px;
+    background-color: #00474B;
+    border-radius: 15px;
+}
+
+.totals {
+    padding: 37px 22px 32px 24px;
+}
+
+.amt-per-person {
+    color: #FFF;
+}
+
+.final-tip-amount,
+.final-total-amount {
+    display: flex;
+    justify-content: space-between;
+    height: 48px;
+}
+
+.final-tip-amount p, 
+.final-total-amount p {
+    flex: 0 0 50%;
+    margin: 0;
+}
+
+.final-tip-amount {
+    margin-bottom: 20px;
+}
+
+.per-person {
+    font-size: 13px;
+    color: #7f9d9f;
+}
+
+.dollars {
+    font-size: 32px;
+    font-weight: 700;
+    color: #26C2AE;
+}
+
+/* Reset Button tyles */
+
+.reset-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.reset,
+.calculate {
+    width: 281px;
+    height: 48px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #00474B;
+    background-color: #26C2AE;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.reset:active {
+    background-color: #9fe8df;
+}
+
+/* Attribution Styles */
+
+.attribution {
+    padding-bottom: 15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .custom-percent {
+        max-width: 328px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .calc-body {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 920px;
+        height: 481px;
+        border-radius: 25px;
+    }
+
+    .input-wrapper {
+        width: 379px;
+        height: 388px;
+        margin-left: 32px;
+    }
+
+    .total,
+    .tip,
+    .party-size {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .total {
+        padding-top: 0;
+    }
+
+    .tip {
+        height: 152px;
+    }
+
+    .percentages {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .custom-percent {
+        max-width: 118px;
+    }
+
+    .results {
+        width: 413px;
+        height: 417px;
+    }
+
+    .totals {
+        padding-bottom: 0;
+        margin-bottom: 122px;
+    }
+
+    .final-tip-amount,
+    .final-total-amount {
+        align-items: center;
+        width: 333px;
+        height: 71px;
+        margin: 0 auto;
+    }
+
+    .dollars {
+        font-size: 48px;
+    }
+
+    .attribution {
+        margin-top: 40px;
+    }
+}

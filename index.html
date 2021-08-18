@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="logo-wrapper">
+      <img src="images/logo.svg" alt="" class="logo">
+    </div>
+    <div class="calc-body">
+      
+      <div class="input-wrapper">
+
+        <div class="total">
+          <p>Bill</p>
+          <div class="currency-input">
+            <img src="images/icon-dollar.svg" alt="">
+            <input type="text" name="currency" placeholder="0.00" class="bill-amt" id="bill">
+            <p class="custom-error" id="bill-error">Please enter a number</p>
+          </div>
+        </div>
+        
+        <div class="tip">
+          <p>Select Tip %</p>
+          <div class="percentages">
+            <button class="percent std" value=".05">5%</button>
+            <button class="percent std" value=".10">10%</button>
+            <button class="percent std" value=".15">15%</button>
+            <button class="percent std" value=".20">20%</button>
+            <button class="percent std" value=".25">25%</button>
+            <div>
+              <input type="text" placeholder="Custom %" width="auto" class="percent custom-percent" id="custom">
+              <p class="custom-error" id="tip-error">Please enter a number</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="party-size">
+          <p>Number of People</p>
+          <div class="people">
+            <img src="images/icon-person.svg" alt="">
+            <input type="text" name="number-of-people" placeholder="0" class="party" id="people">
+            <p class="custom-error" id="guest-error">Please enter a number</p>
+          </div>
+        </div>
+      </div>
+        
+      <div class="results">
+
+        <div class="totals">
+          <div class="amt-per-person">
+            <div class="final-tip-amount">
+              <div>
+                <p>Tip Amount</p>
+                <p class="per-person">/person</p>
+              </div>
+              <div class="dollars" id="tip-dollars">$0.00</div>
+            </div>
+            
+            <div class="total-per-person">
+              <div class="final-total-amount">
+                <div>
+                  <p>Total</p>
+                  <p class="per-person">/person</p>
+                </div>
+                <div class="dollars" id="total-dollars">$0.00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reset-wrapper">
+          <button class="calculate" id="resetButton">Calculate</button>
+          <button class="reset" id="resetButton">Reset</button>
+        </div>
+
+    </div>
+  </div>  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Nick Heerschap</a>.
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
