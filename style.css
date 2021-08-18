@@ -8,6 +8,15 @@ body {
     padding: 0;
 }
 
+input {
+    outline: 0;
+    outline: none;
+}
+
+input:focus {
+    outline: 1px solid #00474b;
+}
+
 /* Component Styles */
 
 .wrapper {
