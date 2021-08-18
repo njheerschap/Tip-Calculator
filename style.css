@@ -8,11 +8,6 @@ body {
     padding: 0;
 }
 
-input {
-    outline: none;
-    outline: 0;
-}
-
 /* Component Styles */
 
 .wrapper {
