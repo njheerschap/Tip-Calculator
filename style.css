@@ -8,6 +8,10 @@ body {
     padding: 0;
 }
 
+input:focus {
+    outline: none;
+}
+
 /* Component Styles */
 
 .wrapper {
